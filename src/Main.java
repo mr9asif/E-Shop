@@ -4,7 +4,7 @@ public class Main {
 
     public static void mainMenu() {
         System.out.println("\nWelcome to your Wallet");
-        System.out.println("1. Balance \n2. Deposit \n3. Withdraw \n4. Main Menu");
+        System.out.println("1. Balance \n2. Deposit \n3. Withdraw \n4. Main Menu \n5. Exit");
     }
 
     public static void walletMenu() {
@@ -41,6 +41,21 @@ public class Main {
                     int am = in.nextInt();
                     System.out.println("successfully Deposite amount" + am);
                 }else if(dp == 2){
+
+                    walletMenu();
+                }else{
+                    systm=false;
+                    System.out.println("Invalid Choise!");
+                }
+            }else if(ch == 3){
+                System.out.println("1. Withdraw your wallet \n2. Wallet");
+                System.out.println("Enter your Choise: ");
+                int wt = in.nextInt();
+                if(wt == 1){
+                    System.out.println("Enter Withdraw Amount: ");
+                    int am = in.nextInt();
+                    System.out.println("Successfully Withdraw Amount" + am);
+                }else if(wt == 2){
 
                     walletMenu();
                 }else{
