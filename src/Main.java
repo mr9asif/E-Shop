@@ -32,7 +32,24 @@ public class Main {
                     systm = false;  // ✅ Now correctly stops the loop
                     System.out.println("Invalid choice! Exiting...");
                 }
+            }else if(ch == 2){
+                System.out.println("1. Deposite your wallet \n2. Wallet");
+                System.out.println("Enter your Choise: ");
+                int dp = in.nextInt();
+                if(dp == 1){
+                    System.out.println("Enter Deposite Amount: ");
+                    int am = in.nextInt();
+                    System.out.println("successfully Deposite amount" + am);
+                }else if(dp == 2){
+
+                    walletMenu();
+                }else{
+                    systm=false;
+                    System.out.println("Invalid Choise!");
+                }
             }
+
+
         }
 
         in.close();  // ✅ Close scanner to avoid resource leak
