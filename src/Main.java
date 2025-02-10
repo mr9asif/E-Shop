@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         WalletInterface obj = new WalletOperation();
         WalletOperation obj2 = new WalletOperation();
+
         Scanner in = new Scanner(System.in);
         boolean systm = true;  // ✅ Initialize correctly
 
@@ -35,6 +36,9 @@ public class Main {
                        systm=false;
                        System.out.println("Invalid Choise!");
                    }
+               }else if(mch == 2){
+                      obj2.shopMenu();
+                   obj2.viewBalance();
                }
 
 
